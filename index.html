@@ -1,75 +1,417 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+<html lang="en">
 
-.bgimg {
-  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "location": {
+              "@type": "Place",
+              "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "India",
+                  "addressRegion": "Karnataka",
+                  "postalCode": "560001",
+                  "streetAddress": "9, Vigyan 1st floor, Lavelle Road, Bengaluru"
+              },
+              "url": "https://thedataeconomylab.com/"
+            },
+            "email": "mailto:support@thedataeconomylab.com",
+            "image": "https://thedataeconomylab.com/wp-content/themes/atma-internal/img/logo2.svg",
+            "logo": "https://thedataeconomylab.com/wp-content/themes/atma-internal/img/logo2.svg",
+            "name": "The Digital Public Lab",
+            "url": "https://thedigitalpubliclab.com/"
+          }
+        </script>
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+        <meta name="description" content="The Digital Public Lab through research, dialogue, and analysis and build ways to learn from human and analog mechanisms or offline architectures that support equitable digital access for the most vulnerable pockets of society.">
+        <meta name="author" content="www.shivamsoni.dev">
+        <title>The Digital Public Lab</title>
+        <meta http-equiv="content-type" content="text/html charset=UTF-8">
+        <link rel="canonical" href="https://thedigitalpubliclab.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="The Digital Public Lab" />
+        <meta property="og:description" content="The Digital Public Lab through research, dialogue, and analysis and build ways to learn from human and analog mechanisms or offline architectures that support equitable digital access for the most vulnerable pockets of society." />
 
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-<body>
+        <meta property="og:url" content="https://thedigitalpubliclab.com" />
+        <meta property="og:site_name" content="Vacha" />
+        <meta property="og:image" content="./img/stakeholders-diagram.png" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
+        <meta property="og:image:secure_url" content="./img/stakeholders-diagram.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="The Digital Public Lab" />
+        <meta name="twitter:description" content="The Digital Public Lab through research, dialogue, and analysis and build ways to learn from human and analog mechanisms or offline architectures that support equitable digital access for the most vulnerable pockets of society." />
+        <meta name="keywords" content="digital public lab, aapti, aapti institute, aapti digital public lab, aapti data economy lab, aapti lab, digital public bangalore, digital bangalore, offline architecture" />
+        <meta name="twitter:image" content="./img/stakeholders-diagram.png" />
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./manifest.json">
+        <meta name="msapplication-TileColor" content="#E06841">
+        <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+        <meta name="theme-color" content="#E06841">
+        <meta name="msapplication-TileColor" content="#E06841">
+        <meta name="theme-color" content="#E06841">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3VG4VP06C"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-<div class="bgimg">
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
-  </div>
-</div>
+          gtag('config', 'G-H3VG4VP06C');
+        </script>
+    </head>
+    <body>
+        <div class="page-container home">
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jul 31, 2021 00:00:00").getTime();
+            <div class="banner bg-lightorange padb50">
+              <div class="container padtb50">
+                <div class="col-xs-12 text-center">
+                  <img src="./img/logo.svg" alt="The Digital Public Lab" />
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12 mart100 padt75 text-right">
+                    <h2 class="nomar blue">The Digital Public Lab</h2>
+                    <p class="p2 nomar">We are working on addressing questions of access, negotiation and governance for the digital public sector.</p>
+                  </div>
+                  <div class="bubbles col-sm-6 col-xs-12">
+                    <div class="bg-orange pad30 cardeous">
+                      <p class="p2 white nomar">Idea of the public is vital to our thinking. Rights-based thinking, and the criticality of civil society are all strands underpinning this idea</p>
+                    </div>
+                    <div class="bg-orange pad30 cardeous mart25">
+                      <p class="p2 white nomar">We are a lab. We aim to learn and build right approaches, using the lab as a hub of learning</p>
+                    </div>
+                    <div class="bg-orange pad30 cardeous mart25">
+                      <p class="p2 white nomar">We are interested in digital technologies across several domains - we are keenly aware of their potential to impact human lives</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
+            <div class="subdesc padt100 padb50">
+              <div class="container">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                  <h5 class="fw7 nomar gray">so, what’s the problem?</h5>
+                  <h3 class="blue">We are witnessing loss of agency due to gaps in access and awareness</h3>
+                  <p class="p2 nomar">In an increasingly digital world, there is a rising need to address the significant gaps in access between those who have digital infrastructure and literacy, and those who do not. Deploying digital solutions for both public and private processes without acknowledging the realities of those it seeks to serve further deepens existing disparities in access.</p>
+                </div>
+              </div>
+            </div>
 
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+            <div class="approachcard padtb50 bgwhiteblue">
+              <div class="container">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                  <div class="cardeous pad50 bg-lightorange">
+                    <h5 class="fw7 nomar gray">our approach</h5>
+                    <h4 class="orange">To design digital solutions informed by people’s offline realities</h4>
+                    <h3 class="nomar">We hope to arrive at approaches to enhance use, amplify accountability and create state capacity. We plan to do this by using offline architectures.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-</body>
+            <div class="focusareas padt50 padb100 bg-blue">
+              <div class="container">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                  <h5 class="fw7 nomar lightgray">our focus areas</h5>
+                  <h3 class="lightblue">We prioritize by working with existing offline architecture or intermediaries and streamline their needs</h3>
+                  <div class="row padt25">
+                    <div class="col-md-6">
+                      <p class="p2 white nomar">Social mechanisms or structures (not technological) that work around technology. Offline architectures are a set of people, processes, and mechanisms that sit between powerful institutions and human beneficiaries, to bridge gaps in capacity, and build access to services. They exist alongside often digitised processes and delivery of services. In a democratic system, offline architectures play the important role of bridging critical access for populations that often lack it.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="imgcontainer cardeous">
+                        <img src="./img/focus-areas.jpg" alt="Our on ground work" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="research padt100 padb50">
+              <div class="container">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                  <h2 class="fw7 orange">Our research so far</h2>
+                  <p class="p1 fw7 nomar">From our field data and coding, we attempted to arrive at a typology of intermediaries, with differential incentives, that could be engaged to better serve last-mile citizens in a given state or social context.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="researchcards padt25">
+              <div class="container-fluid">
+                <div class="row">
+
+                  <div class="col-sm-4 col-xs-12 pad40">
+                    <div class="card pad30">
+                      <div class="icon-container text-center">
+                        <img src="img/icon-awareness.svg" class="icon" alt="Awareness" />
+                      </div>
+                      <h4 class="text-center fw7 orange">Awareness</h2>
+                      <p class="p3 nomar">Our last mile research pointed us towards breakdowns for access and the need for offline architectures in building the gap.<br/><br/><b>Offline architectures build trust</b><br/>Offline architectures such as human intermediaries help build trust in institutions for those at the last-mile<br/><br/><b>Offline architectures contribute contextual knowledge</b><br/>Offline architectures understand the capacity breakdowns and build the ability and agency for those who need it.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12 pad40">
+                    <div class="card pad30">
+                      <div class="icon-container text-center">
+                        <img src="img/icon-governance.svg" class="icon" alt="Governance" />
+                      </div>
+                      <h4 class="text-center fw7 orange">Governance</h2>
+                      <p class="p3 nomar">Our research on platform governance led us to include offline architectures  to account for governance failures<br/><br/><b>Offline architectures to build  accountability</b><br/>Offline architectures should play significant and formal roles in governance in digital architectures serving society, thus enabling accountability<br/><br/><b>Offline architectures to empower the agency </b><br/>Offline architectures are important for amplifying key interactions to enhance agency to collaborate with digital architectures.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12 pad40">
+                    <div class="card pad30">
+                      <div class="icon-container text-center">
+                        <img src="img/icon-stakeholders.svg" class="icon" alt="Stakeholders" />
+                      </div>
+                      <h4 class="text-center fw7 orange">Stakeholders</h2>
+                        <p class="p3 nomar">Our research has highlighted the need for coming of the three primary stakeholders - samaaj  ( community), sarkaar (government), bazaar (market) coming together for co-creating solutions for societal problems.</p>
+                        <div class="text-center martb50">
+                          <img width="75%" src="img/stakeholders-diagram.png" alt="Stakeholders" />
+                        </div>
+                        <p class="p3 nomar">Our early insights on access and governance can provide the foundation to build pathways for solutions to emerge.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="aims padt100 padb50">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3 class="blue">What the lab aims to do?</h3>
+                    <p class="p2 nomar">Through research, dialogue, and analysis, we seek to understand and build ways to learn from human and analog mechanisms or offline architectures that support equitable digital access for the most vulnerable pockets of society.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="aimcards padb50">
+              <div class="container">
+                <div class="row">
+                  
+                  <div class="col-sm-4 col-xs-12">
+                    <h4 class="blue nomartop">IMAGINE</h4>
+                    <div class="boxed bg-lightblue">
+                      <h5 class="blue nomartop">Research</h5>
+                      <p class="p4 nomar">360 embedded field research to understand breakdowns in technology</p>
+                    </div>
+                    <div class="boxed nomartop bg-lightblue mart25">
+                      <h5 class="blue nomartop">Ideate</h5>
+                      <p class="p4 nomar">Brews, roundtables, hackathons and challenges</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12">
+                    <h4 class="blue nomartop">IMPLEMENT</h4>
+                    <div class="boxed bg-lightblue">
+                      <h5 class="blue nomartop">Pilot</h5>
+                      <p class="p4 nomar">Surveys, participant observations, experience tracking</p>
+                    </div>
+                    <div class="boxed nomartop bg-lightblue mart25">
+                      <h5 class="blue nomartop">Share</h5>
+                      <p class="p4 nomar">Toolkits, Operating / How to manual</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12">
+                    <h4 class="blue nomartop">GROW</h4>
+                    <div class="boxed bg-lightblue">
+                      <h5 class="blue nomartop">Fund</h5>
+                      <p class="p4 nomar">Invest capital and resources in ideas that can scale</p>
+                    </div>
+                    <div class="boxed bg-lightblue mart25">
+                      <h5 class="blue nomartop">Legitimize</h5>
+                      <p class="p4 nomar">Population scaled legacy and legal frameworks</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="aims padtb50">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3 class="orange">How do we aim to do it?</h3>
+                    <p class="p2 nomar">We researched about problem-led mix of fieldwork & desk-based work and decided to orient ourselves towards solution-generation and testing.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="howaimcards padb50">
+              <div class="container">
+                <div class="row">
+                  
+                  <div class="col-sm-6 col-xs-12">
+                    <h4 class="nomartop">Engagement with government</h4>
+                    <div class="row nomar">
+                      <div class="col-sm-6 col-xs-12 boxed bg-lightorange">
+                        <h5 class="orange nomartop">Engage with specific line ministries</h5>
+                        <p class="p4 nomar">Findings from specific contexts to relevant line ministries at the State and Central levels</p>
+                      </div>
+                      <div class="col-sm-6 col-xs-12 boxed bg-lighterorange">
+                        <h5 class="orange nomartop">Embed thinking in govt. for technology</h5>
+                        <p class="p4 nomar">Horizontal thinking on access - systematize process and approach - embed in government</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6 col-xs-12">
+                    <h4 class="nomartop">Action on the ground</h4>
+                    <div class="row nomar">
+                      <div class="col-sm-6 col-xs-12 boxed bg-lightorange">
+                        <h5 class="orange nomartop">Enable and support civil society</h5>
+                        <p class="p4 nomar">Think and do-kits, aggregate findings and solutions across contexts</p>
+                      </div>
+                      <div class="col-sm-6 col-xs-12 boxed bg-lighterorange">
+                        <h5 class="orange nomartop">Galvanise and delpoy funding</h5>
+                        <p class="p4 nomar">Over time, channel philanthropic and impact investment capital to inclusive, responsible technologies.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="work padt50 padb100">
+              <div class="container">
+                <div class="row padb50">
+                  <div class="col-xs-12"><h2 class="blue">Published Work</h2></div>
+                </div>
+                <div class="row">
+
+                  <div class="single-card col-md-3 col-sm-6">
+                    <div class="text-card borr20">
+                      <div class="imgcont" style="background-image: url('./img/books/last-mile.png')">
+                        <a href="https://www.aapti.in/blog/last-mile-access-to-urban-governance" target="_blank" class="but but2 p4">Read full report</a>
+                      </div>
+                      <h5 class="fw3 sora blue fw7">Last mile access study</h5>
+                      <p class="p4 nomar">The Last Mile Access research was a 9-month empirical, mixed methods study conducted by Aapti Institute in partnership with Omidyar Network India and eGovernments Foundation.</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="single-card col-md-3 col-sm-6">
+                    <div class="text-card borr20">
+                      <div class="imgcont" style="background-image: url('./img/books/equitable-data.png')">
+                        <a href="https://uploads.strikinglycdn.com/files/7d492f74-a51f-423b-bf5d-65c9f88eee06/AI_Data_Labelling_Report_DIGITAL_25FEB1033.pdf" target="_blank" class="but but2 p4">Read full report</a>
+                      </div>
+                      <h5 class="fw3 sora blue fw7">Just equitable data labelling</h5>
+                      <p class="p4 nomar">We  explored the state of the labelling or annotation industry with its varying business models and prevailing practices.</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="single-card col-md-3 col-sm-6">
+                    <div class="text-card borr20">
+                      <div class="imgcont" style="background-image: url('./img/books/societal-governance.png')">
+                        <a href="https://societalplatform.org/wp-content/uploads/2020/12/PlatGov-Principles-for-ecosystem-governance.pdf" target="_blank" class="but but2 p4">Read full report</a>
+                      </div>
+                      <h5 class="fw3 sora blue fw7">Principles for Societal Platform Governance</h5>
+                      <p class="p4 nomar">We attempted to articulate a set of principles that could guide us in governing societal platforms. In doing so, we attempt to move towards calibration of values.</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="single-card col-md-3 col-sm-6">
+                    <div class="text-card borr20">
+                      <div class="imgcont" style="background-image: url('./img/books/societal-research.png')">
+                        <a href="https://societalpl0atform.org/wp-content/uploads/2020/11/SocPlat_Agency-Research_2Pager_.pdf" target="_blank" class="but but2 p4">Read full paper</a>
+                      </div>
+                      <h5 class="fw3 sora blue fw7">Societal - Research paper</h5>
+                      <p class="p4 nomar">Need a one liner description here, this is just dummy text to fill the text here, so please do write back.</p>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="supports padb150">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="bg-lightorange pad30">
+                      <div class="row">
+                        <div class="col-sm-4 col-xs-12 imgcontainer">
+                          <img src="./img/supporter.png" alt="Aapti Institute" />
+                        </div>
+                        <div class="col-sm-8 col-xs-12 padtb25">
+                          <h5 class="orange">The Digital Public Lab is an initiative of the Aapti Institute</h5>
+                          <p class="p4 nomar">The Digital Public Lab intends  to work closely with the Data Economy Lab, another parallel initiative of Aapti. Aapti is a public strategic research institution that generates policy-relevant, actionable, and accessible knowledge from the frontiers of tech and society, about our networked lives, to support the creation of a fair, free, and equitable society.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="footer bg-lighterorange mart100 padtb50">
+                <div class="container">
+                    <div class="address col-md-4 col-sm-4 col-xs-12 nopadleft">
+                        <p class="p3 h4xs fw7 lex orange">Aapti Institute’s<br/>The Digital Public Lab</p>
+                        <p class="p4 p1xs">2nd Floor, 1/36 Hanumanthappa Layout,<br/> 2nd, Cross, Ulsoor Rd, <br/>Bengaluru, Karnataka 560042</p>
+                      </a></p>
+                    </div>
+                    <div class="accreds col-md-4 col-sm-4 col-xs-12 hidden-xs">
+                      <h5 class="nomartop gray">for inquiries</h5>
+                      <h3 class="fw7 orange nomar"><a href="mailto:contact@aapti.in" target="_blank" rel="noopener">contact@aapti.in</a></h3>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-12 nopad">
+                      <h5 class="nomartop gray">follow us</h5>
+                      <div class="social-icons">
+                        <a class="youtube" href="https://www.youtube.com/channel/UC3Suw5GYGa_7Q6Ltv4hnl3w" target="_blank" rel="noopener"></a>
+                        <a class="twitter" href="https://twitter.com/aaptiinstitute?lang=en" target="_blank" rel="noopener"></a>
+                        <a class="linkedin" href="https://in.linkedin.com/company/aapti-institute" target="_blank" rel="noopener"></a>
+                        <a class="medium" href="https://aapti.medium.com/aapti-institute-data-economy-lab-a3a161f50354" target="_blank" rel="noopener"></a>
+                      </div>
+                    </div>
+                </div>
+                <div class="container padtb25 hidden-xs">
+                    <hr class="orange" />
+                </div>
+                <div class="container">
+                    <div class="copyright col-md-6 col-sm-6 col-xs-12 nopad">
+                        <p class="p4 fw7 nomarbot">© 2021 Aapti Institute</p>
+                    </div>
+                    <div class="shiv col-md-3 pull-right col-sm-5 col-xs-12 text-right nopad">
+                        <div class="shivamsonidev">
+                            <a href="https://shivamsoni.dev/" target="_blank" rel="noopener" title="Developed by www.shivamsoni.dev">
+                                <p class="lex p3 fw7 nomar">Created by</p>
+                                <img width="80px" src="https://shivamsoni.dev/img/shivam-soni-dev-logo.svg" alt="www.shivamsoni.dev" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
