@@ -1,6 +1,12 @@
 // @media (min-width: 768px)
 
 @media (min-width: 991px)
+    .banner
+        .bubbles
+            .bub
+                .cardeous
+                    min-height: 220px
+                    margin-bottom: -30%
     .researchcards
         &::before, &::after
             content: ''
@@ -14,7 +20,7 @@
         &::after
            left: 66%
         .card
-            min-height: 700px
+            min-height: 625px
 
 // @media (min-width: 1340px)
     
@@ -29,6 +35,9 @@
 @media (max-width: 767px)
     .banner
         padding: 75px 0
+        .bubbles
+            .bub:nth-child(n+2)
+                margin-top: 20px
     .subdesc
         padding: 50px 0
     .approachcard
