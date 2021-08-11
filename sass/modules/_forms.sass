@@ -1,0 +1,302 @@
+.wpcf7
+	// .nopadleft
+	// 	padding-right: 7.5px
+	// .nopadright
+	// 	padding-left: 7.5px
+	.padless
+		padding-left: 7.5px
+		padding-right: 7.5px
+	hr
+		border-color: #000
+	label
+		font-size: 12px
+		color: #ABABB6
+		font-weight: 400
+	input
+		color: $blue
+		font-weight: 400
+		width: 100%
+		padding: 0 0 5px
+		font-size: 14px
+		line-height: 14px
+		border: none
+		padding: 15px 20px
+		// border-radius: 20px !important
+		background: #FFF
+		&:hover
+			border-color: #3c3c3b
+			outline: none !important
+		&:focus
+			border-color: #3c3c3b
+			outline: none !important
+	select
+		color: #000
+		font-weight: 600
+		width: 100%
+		padding: 15px
+		font-size: 13px
+		line-height: 14px
+		border: none
+		border-radius: 20px !important
+		background: #FFF
+		letter-spacing: 0.5px
+		min-height: 51px
+		height: 51px
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		background-size: 14px
+		background-image: url(img/dropdown.svg) !important
+		background-repeat: no-repeat !important
+		background-position: right 15px center !important
+		text-transform: uppercase
+		text-overflow: ''
+		text-indent: 0.01px
+		text-overflow: ""
+		&:hover
+			border-color: #3c3c3b
+			outline: none !important
+		&:focus
+			border-color: #3c3c3b
+			outline: none !important
+		option
+			text-transform: initial !important
+		&:invalid
+			color: rgba(0, 0, 0, 0.2)
+		&::-ms-expand
+			display: none
+	input.active, select.active
+		border-color: #3c3c3b
+		color: #000 !important
+	textarea
+		color: $blue
+		font-weight: 400
+		width: 100%
+		padding: 15px
+		font-size: 13px
+		line-height: 14px
+		border: none
+		border-radius: 20px !important
+		background: none
+		letter-spacing: 0.5px
+		background: #FFF
+		padding: 20px
+		resize: none
+		&:hover
+			border-color: #3c3c3b
+			outline: none !important
+		&:focus
+			border-color: #3c3c3b
+			outline: none !important
+	textarea.whitetext
+		background: #FFF
+		border: 2px solid #FFF
+	.wpcf7-form-control-wrap
+		padding-bottom: 25px
+		display: block
+	::-webkit-input-placeholder
+		color: $blue
+		opacity: 0.8	
+	:-moz-placeholder
+		color: $blue
+		opacity: 0.8
+	::-moz-placeholder
+		color: $blue
+		opacity: 0.8
+	:-ms-input-placeholder 	 
+		color: $blue
+		opacity: 0.8
+	input[type=number]
+		&::-webkit-inner-spin-button
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			margin: 0
+		&::-webkit-outer-spin-button
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			margin: 0
+	input[type=submit]
+		font-size: 15px
+		line-height: 18px
+		letter-spacing: 1px
+		text-decoration: none
+		text-align: center
+		border-radius: 0
+		border: none !important
+		color: $blue
+		background: $lightblue
+		width: 100%
+		padding: 15.5px
+		&:focus, &:hover
+			background: $orange
+			color: $blue
+	input[type=submit].alternate
+		background: $blue
+		color: #FFF
+		padding: 17px
+		&:focus, &:hover
+			color: $blue
+			background: $lightblue
+	input[type=submit].blocked
+		width: 100%
+	.wpcf7-response-output
+		margin: 25px 0 10px !important
+		text-align: left
+		width: 100% !important
+		position: relative !important
+		min-height: 1px
+		font-size: 18px
+		float: left  !important
+		border: none !important
+		background: #FFF !important
+		padding: 20px !important
+		border-radius: 20px !important
+	.wpcf7-not-valid
+		border-color: rgba(231, 43, 66, 0.4)
+		&:hover
+			&::placeholder
+				color: #000
+			&:-ms-input-placeholder
+				color: #000
+			&::-ms-input-placeholder
+				color: #000
+	.needed
+		padding-bottom: 40px
+		&:after
+			content: 'Please enter this field'
+			position: absolute
+			left: 0
+			color: rgba(231, 43, 66, 0.4)
+			bottom: 20px
+			font-size: 11px
+	select.wpcf7-not-valid
+		background-image: url(img/dropdown-err.svg) !important
+		&:hover
+			color: #000
+			background-image: url(img/dropdown.svg) !important
+	span.wpcf7-not-valid-tip
+		display: none
+	.ajax-loader
+		margin: 0 0 0 10px
+		float: right
+	.wpcf7-radio
+		.wpcf7-list-item
+			margin: 0 10px 10px 0
+		.wpcf7-list-item.col-xs-12
+			margin: 0 0 10px 0
+			label
+				width: 100%
+				display: block
+			.wpcf7-list-item-label
+				width: 100%
+				display: block
+				text-align: center
+		.wpcf7-list-item.col-xs-12.nopadleft
+			padding-right: 7.5px
+		.wpcf7-list-item.col-xs-12.nopadright
+			padding-left: 7.5px
+		input[type=radio]
+			display: none
+			&:checked+.wpcf7-list-item-label
+				background: #D5F7FF
+		.wpcf7-list-item-label
+			padding: 8px 20px
+			font-size: 11px
+			line-height: 14px
+			letter-spacing: 0.5px
+			background: #f3f3f3
+			cursor: pointer
+			text-transform: uppercase
+			display: inline-block
+			&:hover
+				background: #D5F7FF
+			&:focus
+				background: #D5F7FF
+	.buttlist
+		.wpcf7-list-item
+			margin: 0 10px 10px 0
+		button
+			padding: 14.5px 20px
+			font-size: 13px
+			line-height: 16px
+			letter-spacing: 0.5px
+			background: #F6F6F6
+			cursor: pointer
+			text-transform: uppercase
+			display: inline-block
+			outline: none !important
+			&:hover
+				background: #59DEFF
+				color: #000
+			&:focus
+				background: #59DEFF
+				color: #000
+		button.checked
+			background: #59DEFF
+			color: #000
+	.buttlist.col-xs-12
+		padding: 10px 0 0 0
+		.wpcf7-list-item
+			margin: 0 0 10px 0
+			width: 100%
+		button
+			width: 100%
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.wpcf7
+		input
+			font-size: 11px
+			line-height: 13px
+		select
+			font-size: 11px
+			line-height: 13px
+		textarea
+			font-size: 11px
+			line-height: 13px
+
+@media (min-width: 768px) and (max-width: 991px)
+	.wpcf7
+		.nopadsm
+			padding-left: 0
+			padding-right: 0
+		.nopadlsm
+			padding-left: 0
+			padding-right: 7.5px
+		.nopadrsm
+			padding-left: 7.5px
+			padding-right: 0
+
+@media (max-width: 767px)
+	.wpcf7
+		.wpcf7-form-control-wrap
+    		padding-bottom: 15px
+		.nopadleft
+			padding-right: 0
+		.nopadright
+			padding-left: 0
+		div.padt25.submitter
+			padding-top: 0
+		input
+			&:not[type="checkbox"]
+				padding: 15px 20px
+				box-shadow: none !important
+				-webkit-appearance: none
+		select
+			padding: 15px 20px
+			box-shadow: none !important
+			-webkit-appearance: none
+		textarea
+			padding: 15px 20px
+			box-shadow: none !important
+			-webkit-appearance: none
+			margin-top: 0
+		input[type=submit]
+			width: 100%
+			padding: 15px 20px
+		.wpcf7-response-output
+			float: none
+			margin: 25px 0 10px
+			text-align: left
+			font-size: 16px
