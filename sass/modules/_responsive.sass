@@ -8,35 +8,81 @@
                     min-height: 220px
                     margin-bottom: -30%
     .researchcards
-        &::before, &::after
+        &::after
             content: ''
             border-left: 2px dashed rgba(0,0,0,0.2)
             width: 0
             height: 100%
             top: 0
             position: absolute
-        &::before
-           left: 33% 
-        &::after
-           left: 66%
+            left: 50%
         .card
-            min-height: 565px
+            min-height: 500px
 
 // @media (min-width: 1340px)
 
-// @media (min-width: 992px) and (max-width: 1024px)
-
-// @media (min-width: 768px) and (max-width: 991px)
     
 @media (min-width: 1280px) and (max-width: 1339px)
     .howaimcards .boxed
         min-height: 235px
                 
-@media (min-width: 1025px) and (max-width: 1279px)
+@media (min-width: 992px) and (max-width: 1279px)
+    .page-container
+        padding-top: 59px
+    .aimcards .boxed
+        min-height: 92px
     .howaimcards .boxed
-        min-height: 230px
+        min-height: 150px
+    .researchcards
+        .card
+            min-height: 330px
+    .work .single-card .imgcont
+        height: 330px
+
+// @media (min-width: 992px) and (max-width: 1279px)
+//     .researchcards
+//         .card
+//             min-height: 330px
+//     .aimcards, .howaimcards
+//         .boxed
+//             min-height: 92px
+//     .work .single-card .imgcont
+//         height: 330px
+
+@media (min-width: 768px) and (max-width: 991px)
+    .page-container
+        padding-top: 59px
+    .banner
+        padding-top: 75px
+        padding-bottom: 50px
+    .focusareas
+        .imgcontainer
+            margin-top: 50px
+    .researchcards
+        margin-bottom: 25px
+    .work
+        padding-top: 50px
+        .single-card .imgcont
+            height: 220px
+    .aims, .work
+        padding-top: 0
+    .supports
+        padding-bottom: 50px
+    .researchcards
+        .pad40
+            padding: 40px 30px
+        .card
+            min-height: 415px
+    .aimcards
+        .boxed
+            min-height: 107px
+    .howaimcards
+        .boxed
+            min-height: 185px
 
 @media (max-width: 767px)
+    .page-container
+        padding-top: 61px
     .banner
         padding: 75px 0
         .bubbles
@@ -59,10 +105,12 @@
         padding: 20px 0
     .researchcards
         padding-bottom: 20px
+        .swiper-wrapper
+            padding-top: 10px
         .pad40
             padding: 30px 20px 10px 0
             .card
-                min-height: 590px
+                padding: 25px
         .pad40:nth-child(1)
             padding-left: 20px
     .aims
@@ -97,4 +145,8 @@
                     margin-left: 7.5px
                     margin-right: 7.5px
 
-// @media (max-width: 320px)
+@media (max-width: 450px)
+    .researchcards
+        .pad40
+            .card
+                min-height: 485px

@@ -3,16 +3,8 @@ $(document).ready(function () {
         slidesPerView: 1.3,
         spaceBetween: 0,
         grabCursor: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: '.swiper-pagination',
-        },
         breakpoints: {
             768: {
-                slidesPerView: 2.05,
-                spaceBetween: 30
-            },
-            1024: {
                 slidesPerView: 4.05,
                 spaceBetween: 30
             }
