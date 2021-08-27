@@ -37,4 +37,12 @@ $(document).ready(function () {
             clickable: '.swiper-pagination',
         }
     });
+    $(".hamburger, .avoid").on('click', function(){
+        if($(window).width() < 992) {
+            setTimeout(function() {
+                $('body').toggleClass('opened');
+                $('.menulist').slideToggle(300);
+            }, 0);
+        }
+    });
 });
