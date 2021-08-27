@@ -156,3 +156,40 @@
     .wpcf7 
         input
             border: 2px solid $blue
+
+.page-container.our-work
+    .work-cards
+        .book
+            position: relative
+            &::after
+                content: ""
+                z-index: 1
+                width: 75%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 25%
+                box-shadow: 0 0 7px rgba(0,0,0, 0.2)
+                border-radius: 10px
+            .image
+                height: 430px
+                background-color: #FFF
+                @include bgdef
+                border-radius: 10px
+                top: -30px
+                box-shadow: 0 0 7px rgba(0,0,0, 0.2)
+            .image, .content
+                z-index: 3
+            .content
+                .but
+                    border-radius: 30px
+        .card-cont
+            .card
+                transition: transform 0.5s ease-in-out
+                .content
+                    padding: 20px 30px
+            a:hover
+                color: initial
+                .card
+                    transform: scale(1.02)
+                    background-color: #f3f3f3
