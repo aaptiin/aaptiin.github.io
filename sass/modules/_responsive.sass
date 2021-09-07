@@ -20,6 +20,8 @@
             min-height: 500px
     .page-container.our-work
         .work-cards
+            .book
+                padding-right: 0
             .book-cont:nth-child(n+3)
                 margin-top: 75px
             .card-cont
@@ -117,57 +119,58 @@
 @media (max-width: 767px)
     .page-container
         padding-top: 61px
-    .banner
-        padding: 75px 0
-        .bubbles
-            .bub:nth-child(n+2)
-                margin-top: 20px
-    .subdesc
-        padding: 50px 0
-    .approachcard
-        padding: 0
-        .cardeous
-            padding: 30px
-    .focusareas
-        margin-top: -1px
-        padding-top: 50px
-        .row.padt25
+    .page-container.home
+        .banner
+            padding: 75px 0
+            .bubbles
+                .bub:nth-child(n+2)
+                    margin-top: 20px
+        .subdesc
+            padding: 50px 0
+        .approachcard
+            padding: 0
+            .cardeous
+                padding: 30px
+        .focusareas
+            margin-top: -1px
+            padding-top: 50px
+            .row.padt25
+                padding-top: 0
+                p
+                    padding-bottom: 20px
+        .research
+            padding: 20px 0
+        .researchcards
+            padding-bottom: 20px
+            .swiper-wrapper
+                padding-top: 10px
+            .pad40
+                padding: 30px 20px 10px 0
+                .card
+                    padding: 25px
+            .pad40:nth-child(1)
+                padding-left: 20px
+        .aims
+            padding-top: 20px
+            padding-bottom: 0
+        .aimcards, .howaimcards
+            .boxed
+                min-height: initial
+            .boxcontainer
+                padding: 30px 0 10px 20px
+                .card
+                    min-height: 590px
+            .boxcontainer:nth-last-child(1)
+                padding-right: 20px
+        .work
             padding-top: 0
-            p
-                padding-bottom: 20px
-    .research
-        padding: 20px 0
-    .researchcards
-        padding-bottom: 20px
-        .swiper-wrapper
-            padding-top: 10px
-        .pad40
-            padding: 30px 20px 10px 0
-            .card
-                padding: 25px
-        .pad40:nth-child(1)
-            padding-left: 20px
-    .aims
-        padding-top: 20px
-        padding-bottom: 0
-    .aimcards, .howaimcards
-        .boxed
-            min-height: initial
-        .boxcontainer
-            padding: 30px 0 10px 20px
-            .card
-                min-height: 590px
-        .boxcontainer:nth-last-child(1)
-            padding-right: 20px
-    .work
-        padding-top: 0
-        .row.padb50
-            padding-bottom: 10px
-        .single-card
-            padding-left: 15px
-            padding-right: 15px
-    .supports
-        padding-bottom: 30px
+            .row.padb50
+                padding-bottom: 10px
+            .single-card
+                padding-left: 15px
+                padding-right: 15px
+        .supports
+            padding-bottom: 30px
     .footer
         .address, .accreds
             padding: 0 0 20px
@@ -179,6 +182,8 @@
                     margin-left: 7.5px
                     margin-right: 7.5px
     .page-container.our-work
+        .banner
+            padding: 40px 5px
         .work-cards
             .book-cont:nth-child(n+2)
                 margin-top: 75px
