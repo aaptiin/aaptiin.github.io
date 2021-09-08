@@ -45,4 +45,17 @@ $(document).ready(function () {
             }, 0);
         }
     });
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        /*event.preventDefault();*/
+        if($(window).width()>767) {
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top - 48
+            }, 500);
+        }
+        else {
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top - 48
+            }, 500);
+        }
+    });
 });
