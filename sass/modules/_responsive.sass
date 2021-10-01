@@ -18,6 +18,11 @@
             left: 50%
         .card
             min-height: 500px
+    .page-container.home
+        .banner
+            .container.padt50
+                .card
+                    margin-bottom: -100px
     .page-container.our-work
         .work-cards
             .book
@@ -73,33 +78,37 @@
 @media (min-width: 768px) and (max-width: 991px)
     .page-container
         padding-top: 59px
-    .banner
-        padding-top: 75px
-        padding-bottom: 50px
-    .focusareas
-        .imgcontainer
-            margin-top: 50px
-    .researchcards
-        margin-bottom: 25px
-    .work
-        padding-top: 50px
-        .single-card .imgcont
-            height: 220px
-    .aims, .work
-        padding-top: 0
-    .supports
-        padding-bottom: 50px
-    .researchcards
-        .pad40
-            padding: 40px 30px
-        .card
-            min-height: 415px
-    .aimcards
-        .boxed
-            min-height: 107px
-    .howaimcards
-        .boxed
-            min-height: 185px
+    .page-container.home
+        .banner
+            padding-top: 75px
+            padding-bottom: 50px
+            .container.padt50
+                .card
+                    margin-bottom: -100px
+        .focusareas
+            .imgcontainer
+                margin-top: 50px
+        .researchcards
+            margin-bottom: 25px
+        .work
+            padding-top: 50px
+            .single-card .imgcont
+                height: 220px
+        .aims, .work
+            padding-top: 0
+        .supports
+            padding-bottom: 50px
+        .researchcards
+            .pad40
+                padding: 40px 30px
+            .card
+                min-height: 415px
+        .aimcards
+            .boxed
+                min-height: 107px
+        .howaimcards
+            .boxed
+                min-height: 185px
     .page-container.our-work
         .work-cards
             .book-cont:nth-child(n+2)
@@ -122,12 +131,19 @@
         padding-top: 61px
     .page-container.home
         .banner
-            padding: 75px 0
+            padding: 40px 0 0
+            .container.padt50
+                padding-top: 30px
+                .row
+                    margin: 0
+                .card
+                    padding: 20px
+                    margin-bottom: -90px
             .bubbles
                 .bub:nth-child(n+2)
                     margin-top: 20px
         .subdesc
-            padding: 50px 0
+            padding: 125px 0 50px
         .approachcard
             padding: 0
             .cardeous
