@@ -31,8 +31,10 @@
             .book-cont:nth-child(n+3)
                 margin-top: 75px
             .card-cont
+                display: flex
                 .card
-                    min-height: 170px
+                    display: flex
+                    // min-height: 170px
                 &:nth-child(n+4)
                     margin-top: 30px
                 &:nth-child(3n+1)
@@ -117,8 +119,9 @@
                 .image
                     height: 250px
             .card-cont
+                display: flex
                 .card
-                    min-height: 170px
+                    display: flex
                     .content
                         padding: 20px
                 &:nth-child(n+4)
@@ -203,9 +206,14 @@
             .card-cont
                 &:nth-child(n+2)
                     margin-top: 30px
+            .editorials
+                .card-cont
+                    .card
+                        .content
+                            padding: 20px
             .book
                 &::after
                     width: 100%
                     left: 0
                 .content
-                    padding: 10px 10px 30px
+                    padding: 10px 15px 30px

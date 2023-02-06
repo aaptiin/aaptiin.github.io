@@ -92,6 +92,10 @@
             if(embedUrl) {
               $('#embed-here').attr('src', embedUrl);
             }
+            const title = urlParams.get('title')
+            if(title) {
+              $('#title-here').html(title);
+            }
           });
         </script>
     </head>
@@ -122,8 +126,9 @@
         <div class="page-container our-work">
 
             <div class="container padtb100">
+              <h3 class="blue" id="title-here"></h3>
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" background="#000" id="embed-here" ></iframe>
+                <iframe class="embed-responsive-item" style="background: #333; border-radius: 10px; border: 1px solid #ccc;" id="embed-here" ></iframe>
               </div>
             </div>
             
