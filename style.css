@@ -1667,22 +1667,22 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
 .wpcf7 .wpcf7-radio .wpcf7-list-item {
   margin: 0 10px 10px 0;
 }
-.wpcf7 .wpcf7-radio .wpcf7-list-item.col-xs-12 {
+.wpcf7 .wpcf7-radio .wpcf7-list-item.col-12 {
   margin: 0 0 10px 0;
 }
-.wpcf7 .wpcf7-radio .wpcf7-list-item.col-xs-12 label {
+.wpcf7 .wpcf7-radio .wpcf7-list-item.col-12 label {
   width: 100%;
   display: block;
 }
-.wpcf7 .wpcf7-radio .wpcf7-list-item.col-xs-12 .wpcf7-list-item-label {
+.wpcf7 .wpcf7-radio .wpcf7-list-item.col-12 .wpcf7-list-item-label {
   width: 100%;
   display: block;
   text-align: center;
 }
-.wpcf7 .wpcf7-radio .wpcf7-list-item.col-xs-12.nopadleft {
+.wpcf7 .wpcf7-radio .wpcf7-list-item.col-12.nopadleft {
   padding-right: 7.5px;
 }
-.wpcf7 .wpcf7-radio .wpcf7-list-item.col-xs-12.nopadright {
+.wpcf7 .wpcf7-radio .wpcf7-list-item.col-12.nopadright {
   padding-left: 7.5px;
 }
 .wpcf7 .wpcf7-radio input[type=radio] {
@@ -1733,14 +1733,14 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
   background: #59DEFF;
   color: #000;
 }
-.wpcf7 .buttlist.col-xs-12 {
+.wpcf7 .buttlist.col-12 {
   padding: 10px 0 0 0;
 }
-.wpcf7 .buttlist.col-xs-12 .wpcf7-list-item {
+.wpcf7 .buttlist.col-12 .wpcf7-list-item {
   margin: 0 0 10px 0;
   width: 100%;
 }
-.wpcf7 .buttlist.col-xs-12 button {
+.wpcf7 .buttlist.col-12 button {
   width: 100%;
 }
 
