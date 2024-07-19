@@ -193,6 +193,7 @@
     .work-cards
         .book
             position: relative
+            height: 100%
             &::after
                 content: ""
                 z-index: 1
@@ -213,8 +214,13 @@
             .image, .content
                 z-index: 3
             .content
+                padding-bottom: 60px
                 .but
                     border-radius: 30px
+                .bookbut
+                    position: absolute
+                    bottom: 30px
+                    width: 80%
         .card-cont
             .card
                 transition: transform 0.5s ease-in-out

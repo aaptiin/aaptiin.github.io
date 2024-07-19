@@ -925,8 +925,7 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
 }
 .header .menulist ul li.menu-item-has-children:hover .sub-menu {
   display: block;
-  -webkit-animation: fadingin 0.5s ease-in-out forwards;
-          animation: fadingin 0.5s ease-in-out forwards;
+  animation: fadingin 0.5s ease-in-out forwards;
 }
 .header .menulist ul li.menu-item-has-children:after {
   content: "\e259";
@@ -954,15 +953,6 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
 
 .header.container-fluid {
   width: 100%;
-}
-
-@-webkit-keyframes fadingin {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadingin {
@@ -1082,8 +1072,7 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
   .headstart .header .logo img {
     width: auto;
     height: 60px;
-    -webkit-animation: none !important;
-            animation: none !important;
+    animation: none !important;
     opacity: 1 !important;
     margin: -10px 0;
     padding: 10px 0;
@@ -1302,17 +1291,7 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
 }
 .banner .bubbles {
   opacity: 0;
-  -webkit-animation: fadeIn 1000ms ease forwards;
-          animation: fadeIn 1000ms ease forwards;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: fadeIn 1000ms ease forwards;
 }
 
 @keyframes fadeIn {
@@ -1401,6 +1380,7 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
 }
 .page-container.our-work .work-cards .book {
   position: relative;
+  height: 100%;
 }
 .page-container.our-work .work-cards .book::after {
   content: "";
@@ -1426,8 +1406,16 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
 .page-container.our-work .work-cards .book .image, .page-container.our-work .work-cards .book .content {
   z-index: 3;
 }
+.page-container.our-work .work-cards .book .content {
+  padding-bottom: 60px;
+}
 .page-container.our-work .work-cards .book .content .but {
   border-radius: 30px;
+}
+.page-container.our-work .work-cards .book .content .bookbut {
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
 }
 .page-container.our-work .work-cards .card-cont .card {
   transition: transform 0.5s ease-in-out;
@@ -1625,9 +1613,6 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
   border-color: rgba(231, 43, 66, 0.4);
 }
 .wpcf7 .wpcf7-not-valid:hover::-moz-placeholder {
-  color: #000;
-}
-.wpcf7 .wpcf7-not-valid:hover:-ms-input-placeholder {
   color: #000;
 }
 .wpcf7 .wpcf7-not-valid:hover::placeholder {
@@ -2051,6 +2036,9 @@ p, .p2, .single-post .blog-content ul, .single-post .blog-content ol, .but {
     left: 0;
   }
   .page-container.our-work .work-cards .book .content {
-    padding: 10px 15px 30px;
+    padding: 0 15px 60px;
+  }
+  .page-container.our-work .work-cards .book .content .bookbut {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
